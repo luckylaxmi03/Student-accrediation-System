@@ -1,0 +1,67 @@
+<html>
+    
+    <head>
+        <script>
+            $(window).on('beforeunload', function() {
+              $('body').hide();
+              $(window).scrollTop(0);
+            });
+        </script>
+
+        <link rel="stylesheet" href="mainPageStyle.css">
+        <title>Certificate Portal</title>
+    </head>
+
+    <body>
+        <div class="main" id = "main">
+            <div class="navbar">
+                <a href="#main"><img class="smalllOGO" src="smallLogo.png"></a>
+            </div> 
+
+            <div class="page">
+                <h1><b>
+                    CERTIFICATE<br>PORTAL
+                </b></h1>
+                <a class = "scrollLink" href="#page2">
+                    <div class="scrollB">
+                        Scroll down
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="page2" id = "page2"> 
+            <div class="studenttab">
+                <h1><b>STUDENT PORTAL</b></h1>
+                <p>
+                    The student can get the<br>
+                    certificates by applying here.
+                    <br><br>
+                    Register and Login to get started.
+                </p>
+                <a href="studentpage.html" target="_blank">
+                    <div class="studenttabButton">
+                        <h1>Get started</h1>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="admintab">
+                <h1><b>ADMIN PORTAL</b></h1>
+                <p>
+                    The Admin can access the student<br>
+                    information here.
+                    <br><br>
+                </p>
+                <a href="adminpage.html" target = "_blank">
+                    <div class="adminpageButton">
+                        <h1>Get started</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>

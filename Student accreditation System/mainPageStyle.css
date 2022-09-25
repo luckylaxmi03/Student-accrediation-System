@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    background-image: linear-gradient(#265077, #022140);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 12%;
+    overflow: hidden;
+    user-select: none;
+    
+}
+
+.smalllOGO {
+    width: 8%;
+    position: absolute;
+    top: -10%;
+
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.781)),url(background.jpg);
+    background-size: cover;
+}
+
+
+.page h1 {
+    color: white;
+    position: relative;
+    top: 25%;
+    left: 16%;
+    font-size: 84px;
+    user-select: none;
+}
+
+.scrollB {
+    width: 20%;
+    height: 8%;
+    color: white;
+    position: relative;
+    text-align: center;
+    left: 40%;
+    top: 60%;
+    transition: 0.3s;
+}
+
+.scrollLink {
+    color: white;
+    font-size: x-large;
+}
+
+.scrollB:hover {
+    top: 59%;
+}
+
+.page2 {
+    background-image: linear-gradient(#010c16, #1f476d);
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.studenttab {
+    user-select: none;
+    width: 35%;
+    height: 70%;
+    border-radius: 20px;
+    background-image: linear-gradient(#214568, #022140);
+    position: relative;
+    top: 20%;
+    left: 12%;
+    box-shadow: 20px 20px #011427;
+    transition: 0.3s;
+}
+
+.studenttab:hover {
+    top: 19%;
+}
+
+.admintab {
+    user-select: none;
+    width: 35%;
+    height: 70%;
+    border-radius: 20px;
+    background-image: linear-gradient(#214568, #022140);
+    position: relative;
+    top: -50%;
+    left: 52%;
+    box-shadow: 20px 20px #011427;
+    transition: 0.3s;
+}
+
+.admintab:hover {
+    top: -51%;
+}
+
+.studenttab h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 55px;
+}
+
+.studenttab p {
+    color: lightgrey;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 35px;
+}
+
+.admintab h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 55px;
+}
+
+.admintab p {
+    color: lightgrey;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 2vw;
+}
+
+.studenttabButton {
+    user-select: none;
+    margin: auto;
+    width: 50%;
+    height: 10%;
+    background-color: #022140;
+    border-radius: 20px;
+    position: relative;
+    top: 35%;
+    box-shadow: 8px 8px #011427;
+    transition: 0.2s;
+}
+
+.studenttabButton:hover {
+    background-color: #265077;
+}
+
+.studenttabButton h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 35px;
+}
+
+.adminpageButton {
+    user-select: none;
+    margin: auto;
+    width: 50%;
+    height: 10%;
+    background-color: #022140;
+    border-radius: 20px;
+    position: relative;
+    top: 40%;
+    box-shadow: 8px 8px #011427;
+    transition: 0.2s;
+}
+
+.adminpageButton:hover {
+    background-color: #265077;
+}
+
+.adminpageButton h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 35px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .page h1 {
+        color: green;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .page h1 {
+        color: yellow;
+        font-size: 95px;
+    }
+
+    .studenttab {
+        width: 80%;
+        height: 40%;
+        top: 10%;
+        left: 10%;
+    }
+
+    .studenttab h1 {
+        font-size: 35px;
+    }
+
+    .studenttab p {
+        font-size: 26px;
+        text-align: center;
+        left: 0;
+    }
+
+    .studenttabButton {
+        top: 30%;
+    }
+
+    .studenttabButton h1 {
+        font-size: 24px;
+    }
+
+    .admintab {
+        width: 80%;
+        height: 40%;
+        top: 16%;
+        left: 11%;
+    }
+
+    .admintab h1 {
+        font-size: 35px;
+    }
+
+    .admintab p {
+        font-size: 26px;
+        text-align: center;
+        left: 0; 
+    }
+
+    .adminpageButton {
+        top: 30%;
+    }
+
+    .adminpageButton h1 {
+        font-size: 24px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .page h1 {
+        color: red;
+        font-size: 75px;
+    }
+
+    .studenttab p {
+        font-size: 22px;
+        text-align: center;
+        left: 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .page h1 {
+        color: white;
+        font-size: 84px;
+    }
+    .studenttab {
+        width: 35%;
+        height: 70%;
+        top: 20%;
+        left: 12%;
+    }
+
+    .studenttab h1 {
+        font-size: 50px;
+    }
+
+    .studenttab p {
+        font-size: 30px;
+    }
+
+    .studenttabButton {
+        top: 35%;
+    }
+
+    .studenttabButton h1 {
+        font-size: 35px;
+    }
+
+    .admintab {
+        width: 35%;
+        height: 70%;
+        top: -50%;
+        left: 52%;
+    }
+
+    .admintab h1 {
+        font-size: 50px;
+    }
+
+    .admintab p {
+        font-size: 30px;
+        text-align: center;
+        left: 0; 
+    }
+
+    .adminpageButton {
+        top: 40%;
+    }
+
+    .adminpageButton h1 {
+        font-size: 35px;
+    }
+}
